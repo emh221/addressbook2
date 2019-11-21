@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <h1>Buy some of my things:</h1>
+    <div id="blanks">
+      <form>
+        <select class="form-control" id="whatyoubought">
+          <option>Chair</option>
+          <option>Tophat</option>
+          <option>Kratom</option>
+          <option>Waterwing</option>
+        </select>
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input id="firstname" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input id="lastname" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input id="address" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input id="email" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="cardnumber">credit card number</label>
+          <input id="cardnumber" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-warning">Confirm Order</button>
+      </form>
+    </div>
+    <div id="receipt">
+      <h4>Here is your receipt: <br> You paid an exorbinant sum for a <span class="whatyoubought"></span>!</h4>
+      <h4>order details:</h4>
+      <p><span class="firstname"></span> <span class ="lastname"></span><br><span class ="address"></span><br><span class="email"></span><br><span class ="cardnumber"></span></p>
+
+
+    </div>
+  </div>
+</body>
+</html>
